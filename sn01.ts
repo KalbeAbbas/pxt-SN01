@@ -43,13 +43,14 @@ namespace SN01 {
     let GPRMC: string[]
     let GPGGA: string[]
     
-        /*startParallel(function()
+        startParallel(function()
+	{
+		while(true)
 		{
-			while(true)
-			{
-				parseNMEA()
-			}
-		})*/
+			parseNMEA()
+			basic.pause(100)
+		}
+	})
 		
     function poll(): number {
         let numBytes: number
