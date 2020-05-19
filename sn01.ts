@@ -48,7 +48,7 @@ namespace SN01 {
 		while(true)
 		{
 			parseNMEA()
-			basic.pause(1)
+			basic.waitMicros(100)
 		}
 	})
 		
